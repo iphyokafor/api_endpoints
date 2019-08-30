@@ -1,0 +1,26 @@
+{
+    "name": "Add_Event_API",
+    "version": "1.0.0",
+    "description": "An event API",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "babel server.js --out-dir build",
+        "dev-start": "babel-watch server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "express": "^4.17.1",
+        "moment": "^2.24.0",
+        "nodemon": "^1.19.1",
+        "uuid": "^3.3.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-watch": "^7.0.0"
+    }
+}
