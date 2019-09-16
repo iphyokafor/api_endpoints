@@ -12,16 +12,24 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     return res.status(200).send({
-        'message': 'Welcome to my first API created with love!'
+        'message': 'Welcome!'
     });
 })
 
 
-app.listen(4000)
+app.listen(5500)
 
-console.log('running app on port', 4000);
+console.log('Server running on port', 5500);
 
-import Event from './src/controllers/event';
+// import User from './src/controllers/users';
+import Product from './src/controllers/products';
+// import Sale from './src/controllers/sales';
 
-app.post('/api/v1/Events', Event.addPost);
-app.get('/api/v1/Events', Event.getAll);
+// app.post('/api/v1/Users', User.addPost);
+// app.get('/api/v1/Users', User.getAll);
+app.post('/api/v1/Products', Product.addPost);
+app.get('/api/v1/Products', Product.getAll);
+app.get('/api/v1/Products/:id', Product.getOne);
+// app.post('/api/v1/Sales', Sale.addPost);
+// app.get('/api/v1/Sales', Sale.getAll);
+// app.get('/api/v1/Sales/:id', Sale.getOne);
