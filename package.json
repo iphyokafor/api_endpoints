@@ -1,5 +1,5 @@
 {
-    "name": "Add_Event_API",
+    "name": "api_endpoints",
     "version": "1.0.0",
     "description": "An event API",
     "main": "server.js",
@@ -14,8 +14,11 @@
         "@babel/core": "^7.5.5",
         "@babel/preset-env": "^7.5.5",
         "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
         "moment": "^2.24.0",
         "nodemon": "^1.19.1",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
         "uuid": "^3.3.3"
     },
     "devDependencies": {
